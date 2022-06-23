@@ -1,1 +1,20 @@
-# weights-of-Zeros-
+Initializing all the weights with zeros leads the neurons to learn the same features during training. In fact, any constant initialization scheme will perform very poorly.If all the weights are initialized to zeros, the derivatives will remain same for every w in W[l]. As a result, neurons will learn same features in each iterations. This problem is known as network failing to break symmetry. And not only zero, any constant initialization will produce a poor result.If all the weights are initialized to zero, backpropagation will not work as expected because the gradient for the intermediate neurons and starting neurons will die out(become zero) and will not update everInitializing all the weights with zeros leads the neurons to learn the same features during training. In fact, any constant initialization scheme will perform very poorly. Consider a neural network with two hidden units, and assume we initialize all the biases to 0 and the weights with some constant α.Open in app
+
+Random Initialization For Neural Networks : A Thing Of The Past
+
+Photo by NASA on Unsplash
+Lately, neural nets have been the go to solution for almost all our machine learning related problems. Simply because of the ability of neural nets to synthesize complex non-linearities which can magically give previously impossible accuracy, almost all the time.
+
+In the industry, neural nets are seen as black boxes. This is because they use the features of the given data to formulate more and more complex features as we move from one dense layer to the next. Researchers have tried studying these complex feature generation processes but till date have not had much progress. And neural networks continue to be the black boxes that they have been.
+
+This bit is what makes Deep learning, Deep.
+
+
+courtesy: Machine Learning Memes for Convolutional Teens,facebook
+Some researchers are also against using neural nets in heavily important fields like autonomous cars and drones. They say that the decisions taken by a deep neural network can not be justified as opposed to the decision making framework of say support vector machines or random forests. If anything goes wrong tomorrow, say if an autonomous car jumps off a cliff on the way to the grocery store, If it were support vector machines that were controlling the car’s actions, the reason behind what went wrong can easily be rectified and corrected, on the other hand due to the heavily complex framework of neural networks, no one can actually predict why the car jumped off the cliff and why it took that decision.
+
+But all said, no other method today can learn data, with as much accuracy as Neural Networks. Neural networks are the reason why image recognition is what it is, today. Nowadays complex convolutional nets are being made which are becoming more and more accurate at identifying objects and even competing with humans at the task.If you initialize all weights with zeros then every hidden unit will get zero independent of the input. So, when all the hidden neurons start with the zero weights, then all of them will follow the same gradient and for this reason "it affects only the scale of the weight vector, not the direction".
+
+Also, having zero ( or equal) weights to start with will prevent the network from learning. The errors backpropagated through the network is proportional to the value of the weights. If all the weights are the same, then the backpropagated errors will be the same, and consequently, all of the weights will be updated by the same amount. To avoid this symmetry problem, the initial weights to the network should be unequal.Lately, neural nets have been the go to solution for almost all our machine learning related problems. Simply because of the ability of neural nets to synthesize complex non-linearities which can magically give previously impossible accuracy, almost all the time.
+
+In the industry, neural nets are seen as black boxes. This is because they use the features of the given data to formulate more and more complex features as we move from one dense layer to the next. Researchers have tried studying these complex feature generation processes but till date have not had much progress. And neural networks continue to be the black boxes that they have been.
